@@ -43,7 +43,7 @@ function App() {
                 <div className="button">
                   <ul className="main-9">
                     <li className="main-10">
-                      <Link to="/image" className="cta">
+                      <Link to="/" className="cta">
                         <span className="hover-underline-animation">
                           {" "}
                           Image
@@ -110,7 +110,7 @@ function App() {
               </p>
               <ul className="main-9 ">
                 <li className="main-10">
-                  <Link to="/image" className="cta">
+                  <Link to="/" className="cta">
                     <span className="hover-underline-animation"> Image</span>
                     <svg
                       id="arrow-horizontal"
