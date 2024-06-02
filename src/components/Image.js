@@ -30,7 +30,7 @@ const PexelsImages = () => {
       } catch (error) {
         console.error("Error fetching images:", error);
       } finally {
-        setLoading(false); 
+        setLoading(false);
       }
     };
 
@@ -67,26 +67,6 @@ const PexelsImages = () => {
 
       <div className="button center">
         <ul className="main-9">
-          <li className="main-10">
-            <Link to="/" className="cta">
-              {" "}
-              <span className="hover-underline-animation"> About</span>
-              <svg
-                id="arrow-horizontal"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="10"
-                viewBox="0 0 46 16"
-              >
-                <path
-                  id="Path_10"
-                  data-name="Path 10"
-                  d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                  transform="translate(30)"
-                ></path>
-              </svg>
-            </Link>
-          </li>
           <li className="main-10">
             <Link to="/video" className="cta">
               {" "}
@@ -209,13 +189,13 @@ const PexelsImages = () => {
         </div>
       )}
       {/* Load More button */}
-    {images.length > 0 && (
-      <div className="center">
-        <button onClick={handleLoadMore} className="btn-4">
-          <span className="box">Load More!</span>
-        </button>
-      </div>
-    )}
+      {images.length > 0 && (
+        <div className="center">
+          <button onClick={handleLoadMore} className="btn-4">
+            <span className="box">Load More!</span>
+          </button>
+        </div>
+      )}
     </div>
   );
 };

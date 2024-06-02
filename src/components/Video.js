@@ -12,7 +12,8 @@ const PexelsVideos = () => {
     const fetchVideos = async () => {
       try {
         setLoading(true);
-        const API_KEY = "Q3AiW7OoFtr3exI14eeBvGxvMDkReaWEGX7dKWakTgApg1l1o7R7wWdB";
+        const API_KEY =
+          "Q3AiW7OoFtr3exI14eeBvGxvMDkReaWEGX7dKWakTgApg1l1o7R7wWdB";
         const response = await fetch(
           `https://api.pexels.com/videos/search?query=${searchQuery}&per_page=${perPage}`,
           {
@@ -22,7 +23,7 @@ const PexelsVideos = () => {
           }
         );
         const data = await response.json();
-        console.log(data.videos)
+        console.log(data.videos);
         setVideos(data.videos);
         setLoading(false);
       } catch (error) {
@@ -56,26 +57,6 @@ const PexelsVideos = () => {
 
       <div className="button center">
         <ul className="main-9">
-          <li className="main-10">
-            <Link to="/" className="cta">
-              {" "}
-              <span className="hover-underline-animation"> About</span>
-              <svg
-                id="arrow-horizontal"
-                xmlns="http://www.w3.org/2000/svg"
-                width="30"
-                height="10"
-                viewBox="0 0 46 16"
-              >
-                <path
-                  id="Path_10"
-                  data-name="Path 10"
-                  d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
-                  transform="translate(30)"
-                ></path>
-              </svg>
-            </Link>
-          </li>
           <li className="main-10">
             <Link to="/image" className="cta">
               {" "}
