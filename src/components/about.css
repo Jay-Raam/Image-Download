@@ -17,32 +17,33 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 55px;
   align-content: center;
   flex-wrap: wrap;
 }
 
 .text {
-    flex: 1 1;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin-left: 65px;
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 65px;
 }
 
 .text h1 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .text p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-    text-align: start;
-    animation-name: fadeIn;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    opacity: 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: start;
+  animation-name: fadeIn;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 
 @keyframes fadeIn {
@@ -85,14 +86,14 @@
   padding: 50px 0;
   margin: 0 auto;
   margin-top: 85px;
-  margin-bottom: 85px;
+  /* margin-bottom: 85px; */
 }
 
 .flex-1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .flex-1 p {
@@ -105,7 +106,7 @@
 /* unique */
 
 .unique {
-  padding: 50px 0;
+  padding: 80px 0;
 }
 
 .container {
@@ -127,7 +128,7 @@
 }
 
 .container > div {
-  flex: 1;
+  flex: 1 1;
   padding: 0 20px;
 }
 
@@ -206,24 +207,24 @@ span {
 
 /* btn */
 
-.main-9{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 22px;
-    margin-top: 22px;
-    align-items: center;
+.main-9 {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-top: 22px;
+  align-items: center;
 }
 
-.main-10{
-        list-style: none;
+.main-10 {
+  list-style: none;
 }
 
 .cta {
-    border: none;
-    background: none;
-    cursor: pointer;
-    text-decoration: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .cta span {
@@ -271,7 +272,17 @@ span {
   transform-origin: bottom left;
 }
 
+/* animation for image */
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
 
+.show {
+  opacity: 1;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
 
 /* Large screens */
 @media only screen and (min-width: 1440px) {
@@ -314,7 +325,6 @@ span {
 @media only screen and (max-width: 479px) {
   .container {
     max-width: 100%;
-    padding: 10px;
   }
   .home {
     flex-direction: column;
