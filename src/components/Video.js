@@ -58,7 +58,7 @@ const PexelsVideos = () => {
       <div className="button center">
         <ul className="main-9">
           <li className="main-10">
-            <Link to="/" className="cta">
+            <Link to="/image" className="cta">
               {" "}
               <span className="hover-underline-animation"> Image</span>
               <svg

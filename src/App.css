@@ -1,14 +1,15 @@
+.tit {
+  background: rgb(2, 2, 28);
+}
+
 .title {
   font-size: 50px;
   padding: 18px;
   background-color: rgb(2, 2, 28);
   color: #fff;
-  text-align: left;
+  text-align: center;
   margin: 0 auto;
+  cursor: pointer;
   transition: 0.2s;
   max-width: 1330px;
-}
-
-.title:hover {
-  text-decoration: underline;
 }

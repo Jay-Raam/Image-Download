@@ -132,7 +132,13 @@
   padding: 0 20px;
 }
 
+.link {
+  color: white;
+  margin-top: 12px;
+}
+
 .para {
+  margin-top: 8px;
   font-size: 1.2rem;
   line-height: 1.6;
 }
